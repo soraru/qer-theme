@@ -35,6 +35,6 @@ The CSS was written using [Stylus](http://learnboost.github.io/stylus/), you
 don't need to compile it and can aways change directly the `static/style.css` file.
 
 #### Preview
-You can have a live preview of my blog, hosted on [here](solaire.ml), it's in
+You can have a live preview of my blog, hosted on [here](http://solaire.ml), it's in
 Portuguese, but you can get an idea on how it looks.
 
