@@ -1,0 +1,114 @@
+$bgcolor =	#212121
+$fgcolor =	#FFFFE6
+$white =	#FFFFFF
+$black =	#575751
+$red =	    #F69C9B
+$green =	#8FCD9E
+$gray =	    #696969
+$sans = 	'Droid Sans', sans-serif
+$mono =	    'Droid Sans Mono', monospace
+$mona =	    Mona, MS PGothic, Mincho, Gothic
+
+body
+    margin 0
+    padding 0
+    background url("/theme/images/bg.png") repeat 
+    color $fgcolor
+    font-family $sans
+    font-size 1em
+
+a
+    color $red
+    text-decoration none
+
+hr
+    border-top 1px solid $green 
+    height 0
+
+main
+    max-width 800px
+    margin 0 auto
+
+    header
+        padding-top 1em
+
+        p
+            font-size 2em
+            margin 0
+            text-align center
+            text-transform uppercase
+
+    article
+        background $bgcolor
+        max-width 75%
+        padding 1em 
+        margin 1em auto
+        overflow auto
+
+        h3
+            font-size 2em
+            margin 0
+            text-align center
+
+        #cover
+            padding-bottom 10px
+            width 100%
+
+        #cont-read
+            text-align right
+
+        p
+            padding 1px 10px 1px 10px
+            font 0.95em $sans
+            text-align justify
+
+        #post-list
+            float left
+            width 50%
+
+        #page-list
+            float left
+
+        ul li
+            padding 0.1em
+
+            a:hover
+                text-decoration underline
+
+        pre
+            margin 5px
+            padding 1px
+            color $white
+            font-family $mono
+
+        .mona
+            font-family $mona !important
+            font-size 2vmin
+            border 1px solid $green;
+
+                pre
+                    font-family $mona !important
+                    margin 0
+                    padding 0
+
+        blockquote
+            margin 22px 2px 22px 2px
+            padding-left 10px
+            color $gray
+            font-style italic
+
+        footer
+            border-top $green 1px solid
+            clear both
+            text-align center;
+
+                nav
+                    width 100%
+                    margin 1em auto
+
+                    a
+                        padding 0 10px 0 10px
+
+                    a:hover
+                        text-decoration underline
+

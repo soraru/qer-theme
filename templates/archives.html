@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Arquivo{% endblock %}
+
+{% block content %}
+<article>
+    <h3>Arquivo</h3>
+    <div id="post-list">
+        <h4>Postagens</h4>
+        <ul>
+            {% for article in dates %}
+            <li><a href="{{ SITEURL}}/{{ article.url }}">{{ article.title }}</a>	({{ article.locale_date }})</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div id="page-list">
+        <h4>Links</h4>
+        <ul>
+            {% for p in pages %}
+            <li><a href="{{ SITEURL }}/{{ p.url}}">{{ p.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</article>
+{% endblock %}
+
+{% block footer %}
+<nav>
+<a href="{{ SITEURL }}/index.html">Início</a>
+</nav>
+{% endblock %}

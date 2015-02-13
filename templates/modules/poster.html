@@ -1,0 +1,21 @@
+{% for an_article in dates %}
+{% if an_article.url == article.url %}
+{% set index = loop.index0 %}
+{% if not loop.first %}
+{% set next_article = dates[index-1] %}
+{% endif %}
+{% if not loop.last %}
+{% set previous_article = dates[index+1] %}
+{% endif %}
+<nav>
+    {% if previous_article %}
+    <a href="{{ SITEURL }}/{{ previous_article.url }}">&larr; Postagem anterior</a>
+    {% endif %}
+    <a href="{{ SITEURL }}/index.html">Início</a>
+    {% if next_article %}
+    <a href="{{ SITEURL }}/{{ next_article.url }}">Postagem posterior &rarr;</a>
+    {% endif %}
+</nav>
+{% endif %}
+{% endfor %}
+

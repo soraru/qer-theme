@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/theme/images/bg.png") repeat;
+  color: #ffffe6;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1em;
+}
+a {
+  color: #f69c9b;
+  text-decoration: none;
+}
+hr {
+  border-top: 1px solid #8fcd9e;
+  height: 0;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+main header {
+  padding-top: 1em;
+}
+main header p {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+main article {
+  background: #212121;
+  max-width: 75%;
+  padding: 1em;
+  margin: 1em auto;
+  overflow: auto;
+}
+main article h3 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+main article #cover {
+  padding-bottom: 10px;
+  width: 100%;
+}
+main article #cont-read {
+  text-align: right;
+}
+main article p {
+  padding: 1px 10px 1px 10px;
+  font: 0.95em 'Droid Sans', sans-serif;
+  text-align: justify;
+}
+main article #post-list {
+  float: left;
+  width: 50%;
+}
+main article #page-list {
+  float: left;
+}
+main article ul li {
+  padding: 0.1em;
+}
+main article ul li a:hover {
+  text-decoration: underline;
+}
+main article pre {
+  margin: 5px;
+  padding: 1px;
+  color: #fff;
+  font-family: 'Droid Sans Mono', monospace;
+}
+main article .mona {
+  font-family: Mona, MS PGothic, Mincho, Gothic !important;
+  font-size: 2vmin;
+  border: 1px solid #8fcd9e;
+}
+main article .mona pre {
+  font-family: Mona, MS PGothic, Mincho, Gothic !important;
+  margin: 0;
+  padding: 0;
+}
+main blockquote {
+  margin: 22px 2px 22px 2px;
+  padding-left: 10px;
+  color: #696969;
+  font-style: italic;
+}
+main footer {
+  border-top: #8fcd9e 1px solid;
+  clear: both;
+  text-align: center;
+}
+main footer nav {
+  width: 100%;
+  margin: 1em auto;
+}
+main footer nav a {
+  padding: 0 10px 0 10px;
+}
+main footer nav a:hover {
+  text-decoration: underline;
+}

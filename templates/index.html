@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+{% include "modules/header.html" %}
+{% endblock %}
+
+{% block content %}
+{% for article in articles_page.object_list %}
+<article>
+    <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+    <div>
+<!--        {% if COVER %}
+        <div id="cover-sum">
+            <img id="cover-sum" src="images/{{ article.cover }}">
+        </div>
+        {% endif %} -->
+        {{ article.summary }}
+        <div id="cont-read">
+            <a id="cont-read" href="{{ SITEURL }}/{{ article.url }}">Continue lendo</a>
+        </div>
+    </div>
+</article>
+{% if not loop.last %}
+{% endif %}
+{% endfor %}
+{% endblock %}
+
+{% block footer %}
+<p>{{ TAGLINE }}</p>
+{% include "modules/pager.html" %}
+{% endblock %}

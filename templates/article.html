@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }}{% endblock %} 
+
+{% block header %}
+{% include "modules/header.html" %}
+{% endblock %}
+
+{% block content %}
+<article>
+    <h3>{{ article.title }}</h3>
+    {% if COVER %}
+    <div id="cover">
+        <img id="cover" src="images/{{ article.cover }}">
+    </div>
+    {% endif %}
+    <div>
+        {{ article.content }}
+    </div>
+
+    <div>
+        <p>Postado em {{ article.locale_date }}.</p>
+    </div>
+</article>
+{% endblock %}
+
+{% block footer %}
+{% include "modules/poster.html" %}
+{% endblock %}
