@@ -51,7 +51,7 @@ main
             text-align center
 
         #cover
-            padding 0.2em 0 0.2em 0 
+            padding-top 0.2em 
             width 100%
 
         #cont-read
