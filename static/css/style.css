@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/theme/images/bg.png") repeat;
+  background: url("/theme/images/bg4.png") repeat;
   color: #ffffe6;
   font-family: 'Droid Sans', sans-serif;
   font-size: 1em;
@@ -29,9 +29,10 @@ main header p {
 }
 main article {
   background: #212121;
-  max-width: 75%;
+  border: #8fcd9e 10px solid;
   padding: 1em;
   margin: 1em auto;
+  max-width: 90%;
   overflow: auto;
 }
 main article h3 {
@@ -41,7 +42,8 @@ main article h3 {
 }
 main article #cover {
   padding-top: 0.2em;
-  width: 100%;
+  margin: 0 auto;
+  width: 40em;
 }
 main article #cont-read {
   text-align: right;
@@ -87,8 +89,12 @@ main blockquote {
   font-style: italic;
 }
 main footer {
-  border-top: #8fcd9e 1px solid;
+  border: #8fcd9e 5px solid;
+  background: #212121;
   clear: both;
+  max-width: 75%;
+  margin: 1em auto;
+  padding: 2px;
   text-align: center;
 }
 main footer nav {
@@ -97,7 +103,4 @@ main footer nav {
 }
 main footer nav a {
   padding: 0 10px 0 10px;
-}
-main footer nav a:hover {
-  text-decoration: underline;
 }

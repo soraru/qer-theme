@@ -12,7 +12,7 @@ $mona =	    Mona, MS PGothic, Mincho, Gothic
 body
     margin 0
     padding 0
-    background url("/theme/images/bg.png") repeat 
+    background url("/theme/images/bg4.png") repeat 
     color $fgcolor
     font-family $sans
     font-size 1em
@@ -40,9 +40,10 @@ main
 
     article
         background $bgcolor
-        max-width 75%
+        border $green 10px solid
         padding 1em 
         margin 1em auto
+        max-width 90%
         overflow auto
 
         h3
@@ -51,8 +52,9 @@ main
             text-align center
 
         #cover
-            padding-top 0.2em 
-            width 100%
+            padding-top 0.2em
+            margin 0 auto
+            width 40em
 
         #cont-read
             text-align right
@@ -98,8 +100,12 @@ main
             font-style italic
 
         footer
-            border-top $green 1px solid
+            border $green 5px solid
+            background $bgcolor
             clear both
+            max-width 75%
+            margin 1em auto
+            padding 2px
             text-align center;
 
                 nav
@@ -108,7 +114,3 @@ main
 
                     a
                         padding 0 10px 0 10px
-
-                    a:hover
-                        text-decoration underline
-
