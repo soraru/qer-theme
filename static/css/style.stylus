@@ -12,7 +12,7 @@ $mona =	    Mona, MS PGothic, Mincho, Gothic
 body
     margin 0
     padding 0
-    background url("/theme/images/bg4.png") repeat 
+    background url("/theme/images/bg4.png") repeat fixed
     color $fgcolor
     font-family $sans
     font-size 1em

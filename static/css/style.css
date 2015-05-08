@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("/theme/images/bg4.png") repeat;
+  background: url("/theme/images/bg4.png") repeat fixed;
   color: #ffffe6;
   font-family: 'Droid Sans', sans-serif;
   font-size: 1em;
