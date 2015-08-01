@@ -1,15 +1,15 @@
 <nav>
     {% if articles_page.has_next() %}
-    <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&larr; Postagens anteriores</a>
+    <a rel="next" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">&larr; Postagens anteriores</a>
     {% endif %}
     <a href="{{ SITEURL }}/index.html">Início</a>
     <a href="{{ SITEURL }}/archives.html">Arquivo</a>
 
     {% if articles_page.has_previous() %}
     {% if articles_page.previous_page_number() == 1 %}
-    <a href="{{ SITEURL }}/{{ page_name }}.html">Postagens posteriores &rarr;</a>
+    <a rel="prev" href="{{ SITEURL }}/{{ page_name }}.html">Postagens posteriores &rarr;</a>
     {% else %}
-    <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">Postagens posteriores &rarr;</a>
+    <a rel="prev" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">Postagens posteriores &rarr;</a>
     {% endif %}
     {% endif %}
 </nav>
