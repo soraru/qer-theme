@@ -31,6 +31,9 @@ most of it it's under the `templates` folder.
 
 The `TAGLINE` is on the footer of the page.
 
+There's some examples of backgrounds on `static/images` you can change the name there
+or edit the CSS.
+
 The CSS was written using [Stylus](http://learnboost.github.io/stylus/), you
 don't need to compile it and can aways change directly the `static/style.css` file.
 
